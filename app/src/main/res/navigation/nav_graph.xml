@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/moviesFragment">
+
+    <fragment
+        android:id="@+id/moviesFragment"
+        android:name="com.mertcaliskan.movielistapp.ui.moviesNowPlaying.fragment.MoviesFragment"
+        android:label="Movie List"
+        tools:layout="@layout/movies_fragment" >
+        <action
+            android:id="@+id/action_moviesFragment_to_movieDetailFragment"
+            app:destination="@id/movieDetailFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/movieDetailFragment"
+        android:name="com.mertcaliskan.movielistapp.ui.movieDetail.fragment.MovieDetailFragment"
+        android:label="Movie Detail"
+        tools:layout="@layout/movie_detail_fragment" >
+        <action
+            android:id="@+id/action_movieDetailFragment_to_popularMoviesFragment"
+            app:destination="@id/popularMoviesFragment" />
+
+
+        <action
+            android:id="@+id/action_movieDetailFragment_to_moviesFragment"
+            app:destination="@id/moviesFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/popularMoviesFragment"
+        android:name="com.mertcaliskan.movielistapp.ui.moviesPopular.fragment.PopularMoviesFragment"
+        android:label="Popular Movies"
+        tools:layout="@layout/populer_movies_fragment" >
+
+        <action
+            android:id="@+id/action_popularMoviesFragment_to_movieDetailFragment"
+            app:destination="@id/movieDetailFragment" />
+
+        <action
+            android:id="@+id/action_popularMoviesFragment_to_moviesFragment"
+            app:destination="@id/moviesFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,7 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="default_margin">8dp</dimen>
+    <dimen name="large_margin">16dp</dimen>
+    <dimen name="header">16sp</dimen>
+    <dimen name="large_header">18sp</dimen>
+</resources>
