@@ -37,5 +37,6 @@
 - Minimum SDK: 21
 - Target SDK: 33
 
-👨## ‍💻 Author
+## ‍💻 Author
+
 Mert Çalışkan
